@@ -228,7 +228,8 @@ body {
       color: #333333;
       font-weight: bold; }
       body .projectList .project--header .project-link:hover {
-        background: #8AADBC;
+        background: #8AADBC; }
+      body .projectList .project--header .project-link:hover:first-of-type {
         background: #FB9481; }
   body .projectList .project--description {
     width: 60%;
@@ -242,8 +243,6 @@ body {
     body .contacts h2 {
       margin-bottom: 15%;
       position: relative; }
-      body .contacts h2:hover > body .contacts h2::after {
-        color: black; }
       body .contacts h2::after {
         content: "";
         width: 30px;

@@ -50,11 +50,18 @@ body
 			margin-left: 15%
 			margin-bottom: 10%
 
-		.projectList--title
-			display: flex
-			flex-flow: row nowrap
-			justify-content: space-between
+		h2
 			margin-bottom: 10%
+			position: relative
+
+			&::after
+				content: ""
+				width: 30px
+				height: 10px
+				background-color: $coral
+				position: absolute
+				bottom: 12px
+				left: 145px
 
 		.project--header
 			width: 40%
@@ -67,6 +74,21 @@ body
 				margin: 0
 				padding: 0
 
+			.project-link
+				font-size: 0.8rem
+				background: $gray
+				padding: 2% 8%
+				margin: 0 5%
+				text-decoration: none
+				color: $black
+				font-weight: bold
+
+				&:hover
+					background: $blue
+
+					&:hover:first-of-type
+					background: $coral
+
 		.project--description
 			width: 60%
 			margin: 0
@@ -76,20 +98,6 @@ body
 		.project--links
 			margin-left: 10%
 
-			a
-				font-size: 0.8rem
-				background: $gray
-				padding: 3% 10%
-				margin: 0 5%
-				text-decoration: none
-				color: $black
-				font-weight: bold
-
-				&:hover
-					background: $blue
-
-				&:hover:first-of-type
-					background: $coral
 
 
 	.contacts
@@ -97,6 +105,21 @@ body
 
 		h2
 			margin-bottom: 15%
+			position: relative
+
+			&:hover > &::after
+				color: black
+
+			&::after
+				content: ""
+				width: 30px
+				height: 10px
+				background-color: $blue
+				position: absolute
+				bottom: 12px
+				left: 145px
+
+
 
 		.contacts--list
 			margin-left: 15%

@@ -199,11 +199,17 @@ body {
   body .projectList .project--container {
     margin-left: 15%;
     margin-bottom: 10%; }
-  body .projectList .projectList--title {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    margin-bottom: 10%; }
+  body .projectList h2 {
+    margin-bottom: 10%;
+    position: relative; }
+    body .projectList h2::after {
+      content: "";
+      width: 30px;
+      height: 10px;
+      background-color: #FB9481;
+      position: absolute;
+      bottom: 12px;
+      left: 145px; }
   body .projectList .project--header {
     width: 40%;
     display: flex;
@@ -213,6 +219,17 @@ body {
     body .projectList .project--header .projet--title {
       margin: 0;
       padding: 0; }
+    body .projectList .project--header .project-link {
+      font-size: 0.8rem;
+      background: #EAEAEA;
+      padding: 2% 8%;
+      margin: 0 5%;
+      text-decoration: none;
+      color: #333333;
+      font-weight: bold; }
+      body .projectList .project--header .project-link:hover {
+        background: #8AADBC;
+        background: #FB9481; }
   body .projectList .project--description {
     width: 60%;
     margin: 0;
@@ -220,22 +237,21 @@ body {
     font-size: 0.6em; }
   body .projectList .project--links {
     margin-left: 10%; }
-    body .projectList .project--links a {
-      font-size: 0.8rem;
-      background: #EAEAEA;
-      padding: 3% 10%;
-      margin: 0 5%;
-      text-decoration: none;
-      color: #333333;
-      font-weight: bold; }
-      body .projectList .project--links a:hover {
-        background: #8AADBC; }
-      body .projectList .project--links a:hover:first-of-type {
-        background: #FB9481; }
   body .contacts {
     margin-right: 10%; }
     body .contacts h2 {
-      margin-bottom: 15%; }
+      margin-bottom: 15%;
+      position: relative; }
+      body .contacts h2:hover > body .contacts h2::after {
+        color: black; }
+      body .contacts h2::after {
+        content: "";
+        width: 30px;
+        height: 10px;
+        background-color: #8AADBC;
+        position: absolute;
+        bottom: 12px;
+        left: 145px; }
     body .contacts .contacts--list {
       margin-left: 15%; }
       body .contacts .contacts--list a {

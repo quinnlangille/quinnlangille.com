@@ -10,13 +10,11 @@ class ProjectList extends React.Component{
 	render() {
 		return(
 			<div className="projectList">
-				<div className="projectList--title">
-					<h2>Projects</h2>
-					<div className="colorblock"></div>
-				</div>
+				<h2>Projects</h2>
 				<Project title="Jerome"
 						 description="A real time chat application that translates messages on the fly"
 						 git="https://github.com/theBoysDotJS/jerome-frontend"
+
 				/>
 				<Project
 						 title="Drizzle"

@@ -177,6 +177,10 @@ body {
     padding: 2% 0; }
     body nav svg {
       margin-left: 4%; }
+      @media screen and (max-width: 600px) {
+        body nav svg {
+          width: 40%;
+          margin-left: 5%; } }
       body nav svg .logo-rect:last-of-type {
         transition: all 0.2s ease-in-out; }
       body nav svg .logo-rect {
@@ -190,15 +194,27 @@ body {
     margin: 0 auto 3% auto; }
     body .main h1 {
       font-weight: bold; }
+      @media screen and (max-width: 600px) {
+        body .main h1 {
+          font-size: 1.4em; } }
+    @media screen and (max-width: 600px) {
+      body .main p {
+        margin-bottom: 15%; } }
   body .contentblocks {
     width: 90%;
     margin: 0 auto;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around; }
+    @media screen and (max-width: 600px) {
+      body .contentblocks {
+        flex-flow: column nowrap; } }
   body .projectList .project--container {
     margin-left: 15%;
     margin-bottom: 10%; }
+    @media screen and (max-width: 600px) {
+      body .projectList .project--container {
+        margin-left: 5%; } }
   body .projectList h2 {
     margin-bottom: 10%;
     position: relative; }
@@ -216,6 +232,10 @@ body {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center; }
+    @media screen and (max-width: 600px) {
+      body .projectList .project--header {
+        width: 80%;
+        justify-content: unset; } }
     body .projectList .project--header .projet--title {
       margin: 0;
       padding: 0; }
@@ -236,6 +256,10 @@ body {
     margin: 0;
     padding: 0;
     font-size: 0.6em; }
+    @media screen and (max-width: 600px) {
+      body .projectList .project--description {
+        width: 90%;
+        font-size: 0.8em; } }
   body .projectList .project--links {
     margin-left: 10%; }
   body .contacts {
@@ -253,6 +277,9 @@ body {
         left: 145px; }
     body .contacts .contacts--list {
       margin-left: 15%; }
+      @media screen and (max-width: 600px) {
+        body .contacts .contacts--list {
+          margin-left: 5%; } }
       body .contacts .contacts--list a {
         text-decoration: none;
         color: #333333; }

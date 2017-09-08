@@ -16,6 +16,10 @@ body
 		svg
 			margin-left: 4%
 
+			@media #{$phone}
+				width: 40%
+				margin-left: 5%
+
 			.logo-rect:last-of-type
 				transition: all 0.2s ease-in-out
 
@@ -35,7 +39,13 @@ body
 		h1
 			font-weight: bold
 
+			@media #{$phone}
+				font-size: 1.4em
+
 		p
+			@media #{$phone}
+				margin-bottom: 15%
+
 
 	.contentblocks
 		width: 90%
@@ -44,11 +54,17 @@ body
 		flex-flow: row nowrap
 		justify-content: space-around
 
+		@media #{$phone}
+			flex-flow: column nowrap
+
 	.projectList
 
 		.project--container
 			margin-left: 15%
 			margin-bottom: 10%
+
+			@media #{$phone}
+				margin-left: 5%
 
 		h2
 			margin-bottom: 10%
@@ -69,6 +85,10 @@ body
 			flex-flow: row nowrap
 			justify-content: space-between
 			align-items: center
+
+			@media #{$phone}
+				width: 80%
+				justify-content: unset
 
 			.projet--title
 				margin: 0
@@ -95,6 +115,10 @@ body
 			padding: 0
 			font-size: 0.6em
 
+			@media #{$phone}
+				width: 90%
+				font-size: 0.8em
+
 		.project--links
 			margin-left: 10%
 
@@ -120,6 +144,9 @@ body
 
 		.contacts--list
 			margin-left: 15%
+
+			@media #{$phone}
+				margin-left: 5%
 
 			a
 				text-decoration: none

@@ -43,7 +43,7 @@ class Main extends React.Component{
 		return(
 			<div className="main">
 				<h1>Hi, I'm Quinn</h1>
-				<p>I used to be a designer, now I’m a developer. I like to keep my design minimal, my code clean, and {this.state.sentence}. You can view my most recent work below. If you’re interested in working together, let’s chat about it.  Thanks for {this.state.byebye}.</p>
+				<p>I used to be a designer, now I’m a developer. I like to keep my design minimal, my code clean, and {this.state.sentence}. You can view my most recent work below. If you’re interested in working together, let’s chat about it. Thanks for {this.state.byebye}.</p>
 			</div>
 		);
 	} //end render

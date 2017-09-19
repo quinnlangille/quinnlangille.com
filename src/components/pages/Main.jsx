@@ -17,7 +17,7 @@ class Main extends React.Component{
 
 	_handleSentence = () => {
 		//make array with random sentences
-		let sentenceArr = ['my coffee mug full', 'my priorities straight', 'my pizza extra cheesy', 'my bang too long']
+		let sentenceArr = ['my coffee mug full', 'my priorities straight', 'my pizza extra cheesy', 'my bangs too long']
 
 		//generate random number between one and array length
 		let arrCheck = Math.floor(Math.random() * sentenceArr.length)

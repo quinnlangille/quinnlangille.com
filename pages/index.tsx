@@ -1,14 +1,13 @@
-import Link from 'next/link'
 import Layout from '../components/Layout'
+import config from '../config/app-config';
 
 const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
+  <Layout>
+    <h1 className="title">{ config.title }</h1>
+    <p> Software Developer @ SSENSE </p>
+    <p> Technical Coach @ Journey Education </p>
+    <br />
+    <a href="mailto:me@quinnlangille.com" style={{ textDecoration: 'none', color: 'black', fontWeight: 'bold' }}>email</a>
   </Layout>
 )
 
